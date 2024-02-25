@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Player from './Components/Players';
+import Playerslist from './Components/Playerslist';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div><h1 style={{color:"green",textAlign:"center"}}>cartes des joueurs FIFA</h1></div>
+    
+    <div style={{display:"flex",justifyContent:"center",gap:"15px",flexWrap:"wrap", marginTop:"30px"}}>
+      
+      <Playerslist />
     </div>
+    </>
   );
 }
-
 export default App;
